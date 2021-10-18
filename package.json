@@ -1,0 +1,19 @@
+{
+  "name": "css_animations",
+  "version": "1.0.0",
+  "description": "Some animations I could use in the future. Or work again on it. Just some learning process",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass sass/style.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Doryae/css_animations.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Doryae/css_animations/issues"
+  },
+  "homepage": "https://github.com/Doryae/css_animations#readme"
+}
