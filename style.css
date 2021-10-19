@@ -27,6 +27,7 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background: #9A9483;
 }
 
 footer, header {
@@ -35,11 +36,40 @@ footer, header {
   background-color: #212121;
 }
 
+.button,
+.loading,
+.input,
+.others {
+  width: 80%;
+  height: auto;
+  border: solid 3px #212121;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 50px;
+  background: #C7BEA2;
+}
+
+.button__title,
+.loading__title,
+.input__title,
+.others__title {
+  width: 100%;
+  height: 60px;
+  font-size: 1.8rem;
+  color: #F6F6F6;
+  background: #212121;
+  text-align: center;
+  line-height: 50px;
+}
+
 /* Header -- Footer */
 header nav {
   width: 75%;
   height: 100%;
-  line-height: 85px;
+  line-height: 75px;
   margin: auto;
 }
 header nav ul {
@@ -57,10 +87,19 @@ header nav a {
   text-decoration: none;
   vertical-align: middle;
 }
+header li {
+  border: double 5px transparent;
+}
+header li:hover {
+  border: double 5px #F6F6F6;
+}
 header a {
   font-size: 2.5rem;
 }
 
+footer {
+  margin-top: 25px;
+}
 footer ul {
   display: flex;
   justify-content: space-evenly;
@@ -78,6 +117,34 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline 0.1rem #F6F6F6;
+}
+
+/* Anchor nav */
+.anchor__nav {
+  position: fixed;
+  top: 90%;
+  right: 5%;
+  font-size: 3rem;
+}
+.anchor__nav a {
+  text-decoration: none;
+  color: #E5DCC3;
+  text-shadow: 5px 5px 5px #212121;
+}
+
+/* section */
+.button__box,
+.loading__box,
+.input__box,
+.others__box {
+  width: 500px;
+  height: 500px;
+  border: solid 1px #212121;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #E5DCC3;
 }
 
 /*# sourceMappingURL=style.css.map */

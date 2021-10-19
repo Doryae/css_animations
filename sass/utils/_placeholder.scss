@@ -3,3 +3,26 @@
     height: 125px;
     background-color: $c-black;
 }
+
+%div-container {
+    width: 80%;
+    height: auto;
+    border: solid 3px $c-black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 50px;
+    background: $c-bg;
+}
+
+%div-title {
+    width: 100%;
+    height: 60px;
+    font-size: 1.8rem;
+    color: $c-white;
+    background: $c-black;
+    text-align: center;
+    line-height: 50px;
+}
