@@ -27,8 +27,22 @@
         border: solid 1px $c-black;
         margin: 10px 0;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-direction: column;
         background: $c-box-bg;
+    }
+    &__box--header {
+        background: $c-box-header-bg;
+        width: 100%;
+        height: 2rem;
+        line-height: 40px;
+        text-align: center;
+    }
+    &__box--content {
+        display: flex;
+        flex-grow: 1;
+        &:first-child {
+            margin: auto;
+        }
     }
 }

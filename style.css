@@ -30,6 +30,10 @@ html {
   background: #9A9483;
 }
 
+p {
+  margin-top: 35px;
+}
+
 footer, header {
   width: 100%;
   height: 125px;
@@ -71,6 +75,7 @@ header nav {
   height: 100%;
   line-height: 75px;
   margin: auto;
+  text-transform: uppercase;
 }
 header nav ul {
   display: flex;
@@ -142,9 +147,52 @@ footer a:hover {
   border: solid 1px #212121;
   margin: 10px 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   background: #E5DCC3;
+}
+.button__box--header,
+.loading__box--header,
+.input__box--header,
+.others__box--header {
+  background: #AAA492;
+  width: 100%;
+  height: 2rem;
+  line-height: 40px;
+  text-align: center;
+}
+.button__box--content,
+.loading__box--content,
+.input__box--content,
+.others__box--content {
+  display: flex;
+  flex-grow: 1;
+}
+.button__box--content:first-child,
+.loading__box--content:first-child,
+.input__box--content:first-child,
+.others__box--content:first-child {
+  margin: auto;
+}
+
+/* animation */
+@keyframes loading-one {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading__animation--one {
+  width: 150px;
+  height: 150px;
+  border: 8px solid transparent;
+  border-left-color: #6D9886;
+  border-right-color: #6D9886;
+  border-radius: 50%;
+  margin: auto;
+  animation: loading-one 1.5s linear infinite running;
 }
 
 /*# sourceMappingURL=style.css.map */

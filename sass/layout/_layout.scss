@@ -11,6 +11,7 @@ header {
     height: 100%;
     line-height: 75px;
     margin: auto;
+    text-transform: uppercase;
     @include head-foot-list;
 }
   li {
@@ -56,4 +57,4 @@ footer {
   @include div-animation;
 }
 
-
+/* animation */
