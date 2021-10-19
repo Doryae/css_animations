@@ -168,10 +168,10 @@ footer a:hover {
   display: flex;
   flex-grow: 1;
 }
-.button__box--content:first-child,
-.loading__box--content:first-child,
-.input__box--content:first-child,
-.others__box--content:first-child {
+.button__box--container,
+.loading__box--container,
+.input__box--container,
+.others__box--container {
   margin: auto;
 }
 

@@ -41,8 +41,8 @@
     &__box--content {
         display: flex;
         flex-grow: 1;
-        &:first-child {
-            margin: auto;
-        }
+    }
+    &__box--container {
+        margin: auto;
     }
 }
