@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+button {
+  all: unset;
+}
+
 html {
   font-size: 20px;
   font-family: "Merriweather";
@@ -193,6 +197,27 @@ footer a:hover {
   border-radius: 50%;
   margin: auto;
   animation: loading-one 1.5s linear infinite running;
+}
+
+.button__animation--one button {
+  width: 350px;
+  height: 150px;
+  background: #6D9886;
+  color: #F6F6F6;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 2px #212121;
+  border-radius: 35px;
+  transition: 0.2s;
+}
+.button__animation--one button:hover {
+  box-shadow: 0 6px 2px #212121;
+  transform: translateY(2px);
+  cursor: pointer;
+}
+.button__animation--one button:active {
+  box-shadow: none;
+  transform: translateY(8px);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -21,6 +21,10 @@
     box-sizing: border-box;
 }
 
+button {
+    all: unset;
+}
+
 html {
     font-size: 20px;
     font-family: "Merriweather";
