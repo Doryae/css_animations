@@ -23,6 +23,9 @@
 
 button {
     all: unset;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 html {
@@ -39,4 +42,5 @@ html {
 
 p {
     margin-top: 35px;
+    text-align: center;
 }
