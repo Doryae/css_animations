@@ -57,4 +57,18 @@ footer {
   @include div-animation;
 }
 
+.others {
+  &__box {
+    &--content {
+      .others__box--container {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+  & .overflow--hidden {
+    overflow: hidden;
+  }
+}
+
 /* animation */

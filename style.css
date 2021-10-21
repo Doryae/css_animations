@@ -77,6 +77,14 @@ footer, header {
   line-height: 50px;
 }
 
+.others__animation--one .green-fire, .others__animation--one .orange-fire, .others__animation--one .red-fire {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
 /* Header -- Footer */
 header nav {
   width: 75%;
@@ -183,6 +191,14 @@ footer a:hover {
   margin: auto;
 }
 
+.others__box--content .others__box--container {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.others .overflow--hidden {
+  overflow: hidden;
+}
+
 /* animation */
 @keyframes rotate-360deg {
   0% {
@@ -272,6 +288,50 @@ footer a:hover {
   border-radius: 50%;
   left: 50%;
   transform: translate(-50%);
+}
+
+/* others animations */
+.others__animation--one {
+  margin-top: 80px;
+}
+.others__animation--one .bg--black {
+  position: relative;
+  background: #212121;
+  border: 3px solid #080808;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.others__animation--one .pole__bg--black {
+  position: relative;
+  width: 14px;
+  height: 178px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #212121;
+  border-left: 6px solid #080808;
+  border-top: 4px solid #020202;
+}
+.others__animation--one .dark--object {
+  position: relative;
+  height: 25px;
+  width: 65px;
+  background: #080808;
+  border-radius: 20px 20px 0 0;
+  top: -4px;
+  left: -8px;
+  border: 3px solid black;
+  border-bottom: none;
+}
+.others__animation--one .red-fire {
+  background: #FF8080;
+}
+.others__animation--one .orange-fire {
+  background: #FFBA92;
+}
+.others__animation--one .green-fire {
+  background: #CBE2B0;
 }
 
 /*# sourceMappingURL=style.css.map */

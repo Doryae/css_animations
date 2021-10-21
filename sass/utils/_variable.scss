@@ -1,4 +1,6 @@
 $c-black: #212121;
+$c-black-darken-10: darken($c-black, 10);
+$c-black-darken-12: darken($c-black, 12);
 $c-green: #6D9886;
 $c-white: #F6F6F6;
 $c-bg: #C7BEA2;
@@ -7,3 +9,7 @@ $c-box-header-bg: #AAA492;
 $c-box-bg: #E5DCC3;
 
 $c-dot: #D1E8E4;
+
+$r-fire: #FF8080;
+$o-fire: #FFBA92;
+$g-fire: #CBE2B0;
