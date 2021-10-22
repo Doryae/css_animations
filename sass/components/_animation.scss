@@ -19,6 +19,65 @@
     }
 }
 
+@keyframes green-up {
+    0% { 
+        opacity: .1;
+    } 
+    10% {
+        opacity: .8;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: .2;
+    }
+    41%,
+    100% {
+        opacity: .1;
+    }
+}
+
+@keyframes orange-up {
+    0% {
+        opacity: 0.1;
+    }
+    35% {
+        opacity: .3;
+    }
+    40% {
+        opacity: 1;
+    }
+    65% {
+        opacity: .2;
+    }
+    100% {
+        opacity: .1;
+    }
+}
+
+@keyframes red-up {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: .1;
+    }
+    55%{
+        opacity: .2;
+    }
+    65% {
+        opacity: .7;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .2;
+    }
+}
+
+
 /* Button Animations*/ 
 .button__animation--one {
     button {    
@@ -123,23 +182,40 @@
         position: relative;
         height: 25px;
         width: 65px;
-        background: darken($c-black, 10);
+        background: darken($c-black, 5);
         border-radius: 20px 20px 0 0;
         top: -4px;
         left: -8px;
         border: 3px solid black;
         border-bottom: none;
+        z-index: 2;
     }
     .red-fire {
         @extend %red-traffic;
-        background: $r-fire;
+        background: darken($r-fire, 60);
+        opacity: 1;
+        &::after {
+            @extend %red-traffic-after;
+            background: radial-gradient($r-fire 10%, $r-fire-on 60%);
+            animation: red-up 10s linear infinite;
+        }
     }
     .orange-fire {
         @extend %red-traffic;
-        background: $o-fire;
+        background: darken($o-fire, 60);
+        &::after {
+            @extend %red-traffic-after;
+            background: radial-gradient($o-fire 10%, $o-fire-on 60%);
+            animation: orange-up 10s linear infinite;
+        }
     }
     .green-fire {
         @extend %red-traffic;
-        background: $g-fire;
+        background: darken($g-fire, 60);
+        &::after {
+            @extend %red-traffic-after;
+            background: radial-gradient($g-fire 10%, $g-fire-on 60%);
+            animation: green-up 10s linear infinite;
+        }
     }
 }

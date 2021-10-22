@@ -81,8 +81,19 @@ footer, header {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  opacity: 0.3;
-  transition: 0.3s;
+  z-index: 0;
+}
+
+.others__animation--one .green-fire::after, .others__animation--one .orange-fire::after, .others__animation--one .red-fire::after {
+  content: "";
+  display: flex;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
 }
 
 /* Header -- Footer */
@@ -216,6 +227,60 @@ footer a:hover {
     transform: rotate(360deg);
   }
 }
+@keyframes green-up {
+  0% {
+    opacity: 0.1;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  41%, 100% {
+    opacity: 0.1;
+  }
+}
+@keyframes orange-up {
+  0% {
+    opacity: 0.1;
+  }
+  35% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+@keyframes red-up {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  55% {
+    opacity: 0.2;
+  }
+  65% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
 /* Button Animations*/
 .button__animation--one button {
   width: 350px;
@@ -317,21 +382,35 @@ footer a:hover {
   position: relative;
   height: 25px;
   width: 65px;
-  background: #080808;
+  background: #141414;
   border-radius: 20px 20px 0 0;
   top: -4px;
   left: -8px;
   border: 3px solid black;
   border-bottom: none;
+  z-index: 2;
 }
 .others__animation--one .red-fire {
-  background: #FF8080;
+  background: #4d0000;
+  opacity: 1;
+}
+.others__animation--one .red-fire::after {
+  background: radial-gradient(#FF8080 10%, #CF0000 60%);
+  animation: red-up 10s linear infinite;
 }
 .others__animation--one .orange-fire {
-  background: #FFBA92;
+  background: #5f2300;
+}
+.others__animation--one .orange-fire::after {
+  background: radial-gradient(#FFBA92 10%, #FA9905 60%);
+  animation: orange-up 10s linear infinite;
 }
 .others__animation--one .green-fire {
-  background: #CBE2B0;
+  background: #32461a;
+}
+.others__animation--one .green-fire::after {
+  background: radial-gradient(#CBE2B0 10%, #77D970 60%);
+  animation: green-up 10s linear infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
